@@ -22,7 +22,7 @@ def simple_dft(a: List[int]) -> List[complex]:
     return A
 
 
-def fft(a: List[int]) -> List[complex]:
+def fft(a: List[complex]) -> List[complex]:
     n = len(a)
     if n == 1:
         return a
@@ -38,7 +38,25 @@ def fft(a: List[int]) -> List[complex]:
     return A
 
 
+def ifft(A: List[complex]) -> List[complex]:
+    def _ifft(A: List[complex]) -> List[complex]:
+        n = len(A)
+        if n == 1:
+            return A
+        else:
+            A_even, A_odd = A[0::2], A[1::2]
+            y_even, y_odd = ifft(A_even), ifft(A_odd)
+            a = [0 for _ in range(n)]
+            w = 1
+            for k in range(n // 2):
+                a[k] = y_even[k] + w * y_odd[k]
+                a[n // 2 + k] = y_even[k] - w * y_odd[k]
+                w = w * nth_primitive_root_of_unity(-n)
+            return a
+    return _ifft([a / len(A) for a in A])
+
+
 if __name__ == "__main__":
-    a = [1, 2, 3, 4]
-    A = [(round(z.real, 1), round(z.imag, 1)) for z in simple_dft(a)]
-    print(A)
+    sequence = [1, 2, 3, 4]
+    print([(round(z.real, 2), round(z.imag, 2)) for z in fft(sequence)])
+    print([(round(z.real, 2), round(z.imag, 2)) for z in ifft(sequence)])
