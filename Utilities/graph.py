@@ -5,6 +5,9 @@ class Graph:
 
     def is_adjacent(self, v: int, w: int) -> bool:
         return self._edges[v][w] != 0
+
+    def get_weight(self, v: int, w: int) -> int:
+        return self._edges[v][w]
     
     def add_edge(self, v: int, w: int, weight: int=1) -> None:
         self._edges[v][w] = weight
