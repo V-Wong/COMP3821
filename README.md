@@ -1,5 +1,5 @@
-# COMP3821
-Implementation of algorithms from the COMP3821: Extended Algorithms and Programming Techniques course at UNSW. All the implementations are written in Python 3+ with detailed explanations as comments. This repository is intended for me to study algorithms by implementing them in code and explaining the steps in simple English.
+# COMP3821: Extended Algorithms and Programming Techniques (UNSW)
+Implementation of algorithms from the COMP3821: Extended Algorithms and Programming Techniques course at UNSW. All the implementations are written in Python 3+ with detailed explanations as comments. This repository is intended for me to study algorithms by implementing them in code and explaining the steps in simple English. Also included are various algorithms not strictly taught in the course but are related to the programming techniques taught.
 
 ## Divide and Conquer
 ### Core Algorithms
@@ -14,6 +14,12 @@ Implementation of algorithms from the COMP3821: Extended Algorithms and Programm
 - [Inversion counting (modified merge sort)](https://github.com/V-Wong/COMP3821/blob/master/Divide%20and%20Conquer/inversion_counter.py)
 - [Buy and sell stocks (modified merge sort)](https://github.com/V-Wong/COMP3821/blob/master/Divide%20and%20Conquer/buy_and_sell_stock.py)
 
-## Greedy
+## Greedy Method
 ### Core Algorithms
 - [Dijkstra's shortest path algorithm](https://github.com/V-Wong/COMP3821/blob/master/Greedy/dijkstra.py)
+
+## Dynamic Programming
+### Core Algorithms
+- [Fibonacci series](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/fibonacci.py)
+
+If you like this repo, consider checking my [personal website (vwong.dev)](https://vwong.dev) for other cool stuff.
