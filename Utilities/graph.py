@@ -4,22 +4,19 @@ class Graph:
                        for _ in range(num_vertices)]
 
     def is_adjacent(self, v: int, w: int) -> bool:
-        return self._edges[v][w] == 1
+        return self._edges[v][w] != 0
     
-    def add_edge(self, v: int, w: int) -> None:
-        self._edges[v][w] = 1
+    def add_edge(self, v: int, w: int, weight: int=1) -> None:
+        self._edges[v][w] = weight
 
     def remove_edge(self, v: int, w: int) -> None:
         self._edges[v][w] = 0
 
 
 class UndirectedGraph(Graph):
-    def is_adjacent(self, v: int, w: int) -> bool:
-        return self._edges[v][w] == 1 or self._edges[w][v] == 1
-    
-    def add_edge(self, v: int, w: int) -> None:
-        self._edges[v][w] = 1
-        self._edges[w][v] = 1
+    def add_edge(self, v: int, w: int, weight: int=1) -> None:
+        self._edges[v][w] = weight
+        self._edges[w][v] = weight
 
     def remove_edge(self, v: int, w: int) -> None:
         self._edges[v][w] = 0
