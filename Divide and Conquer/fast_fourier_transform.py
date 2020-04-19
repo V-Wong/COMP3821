@@ -45,7 +45,7 @@ def ifft(A: List[complex]) -> List[complex]:
             return A
         else:
             A_even, A_odd = A[0::2], A[1::2]
-            y_even, y_odd = ifft(A_even), ifft(A_odd)
+            y_even, y_odd = _ifft(A_even), _ifft(A_odd)
             a = [0 for _ in range(n)]
             w = 1
             for k in range(n // 2):
@@ -59,4 +59,4 @@ def ifft(A: List[complex]) -> List[complex]:
 if __name__ == "__main__":
     sequence = [1, 2, 3, 4]
     print([(round(z.real, 2), round(z.imag, 2)) for z in fft(sequence)])
-    print([(round(z.real, 2), round(z.imag, 2)) for z in ifft(sequence)])
+    print([(round(z.real, 2), round(z.imag, 2)) for z in ifft(fft(sequence))])
