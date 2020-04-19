@@ -3,12 +3,35 @@ from functools import reduce
 
 import numpy as np
 
+from fast_fourier_transform import fft, ifft
+
 
 def evaluate_polynomial(polynomial: List[float], value: float) -> int:
     total = 0
     for power, coefficient in enumerate(polynomial):
         total += coefficient * (value ** power)
     return total
+
+
+def format_polynomial(polynomial: List[float]) -> str:
+    polynomial_string = ""
+
+    for power, coefficient in enumerate(polynomial):
+        coefficient = int(round(coefficient, 1))
+        if coefficient == 1 and power != 0:
+            coefficient = ""
+
+        if power == 0:
+            polynomial_string += f"{coefficient}"
+        elif power == 1:
+            polynomial_string += f"{coefficient}x"
+        else:
+            polynomial_string += f"{coefficient}x^{power}"
+
+        if power != len(polynomial) - 1:
+            polynomial_string += " + "
+
+    return polynomial_string
 
 
 def matrix_method(p1: List[float], p2: List[float]) -> List[float]:
@@ -47,36 +70,35 @@ def matrix_method(p1: List[float], p2: List[float]) -> List[float]:
     return np.linalg.inv(vandermonde_matrix).dot(pointwise_multiplication)
 
 
-def format_polynomial(polynomial: List[float]) -> str:
-    polynomial_string = ""
+def fft_method(p1: List[float], p2: List[float]) -> List[float]:
+    """
+    Pad the two polynomials with 0s equal to the degree of the other polynomial.
+    Fast Fourier transform both polynomials.
+    Pointwise multiply.
+    Inverse Fast Fourier transform to extract coefficients from pointwise multiplication.
+    """
 
-    for power, coefficient in enumerate(polynomial):
-        coefficient = int(round(coefficient, 1))
-        if coefficient == 1 and power != 0:
-            coefficient = ""
+    p1_fft, p2_fft = fft(p1 + [0] * len(p2)), fft(p2 + [0] * len(p1))
 
-        if power == 0:
-            polynomial_string += f"{coefficient}"
-        elif power == 1:
-            polynomial_string += f"{coefficient}x"
-        else:
-            polynomial_string += f"{coefficient}x^{power}"
+    pointwise_mutltiplication = []
 
-        if power != len(polynomial) - 1:
-            polynomial_string += " + "
+    for point1, point2 in zip(p1_fft, p2_fft):
+        pointwise_mutltiplication.append(point1 * point2)
 
-    return polynomial_string
+    return [round(z.real, 2) for z in ifft(pointwise_mutltiplication)]
 
 
 if __name__ == "__main__":
     test_cases = [
-        ([1, 2, 3], [1, 1, 1]),
-        ([3, 2, 1], [7, 8, 9])
+        ([1, 2, 3, 4], [1, 1, 1, 1]),
+        ([3, 2, 1, 3], [7, 8, 9, 10])
     ]
 
     for test_case in test_cases:
         polynomial1, polynomial2 = test_case
-        print(f"Polynomial 1: {format_polynomial(polynomial1)}")
+        print(f"\nPolynomial 1: {format_polynomial(polynomial1)}")
         print(f"Polynomial 2: {format_polynomial(polynomial2)}\n")
-        print(f"""Resulting polynomial: \n"""
+        print(f"""Resulting polynomial (matrix method): \n"""
               f"""{format_polynomial(matrix_method(polynomial1, polynomial2))}""")
+        print(f"""Resulting polynomial (fft method): \n"""
+              f"""{format_polynomial(fft_method(polynomial1, polynomial2))}""")
