@@ -17,6 +17,8 @@ Implementation of algorithms from the COMP3821: Extended Algorithms and Programm
 ## Greedy Method
 ### Core Algorithms
 - [Dijkstra's shortest path algorithm](https://github.com/V-Wong/COMP3821/blob/master/Greedy/dijkstra.py)
+- [Huffman encoding](https://github.com/V-Wong/Huffman-Encoding/blob/master/huffmanEncode.js)
+- [Huffman encoding visualisation](https://vwong.dev/Huffman-Encoding/)
 
 ## Dynamic Programming
 ### Core Algorithms
