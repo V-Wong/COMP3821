@@ -4,6 +4,7 @@ Implementation of algorithms from the COMP3821: Extended Algorithms and Programm
 ## Divide and Conquer
 ### Core Algorithms
 - [Binary search](https://github.com/V-Wong/COMP3821/blob/master/Divide%20and%20Conquer/binary_search.py)
+- [Merge sort](https://github.com/V-Wong/COMP3821/blob/master/Divide%20and%20Conquer/merge_sort.py)
 - [Karatsuba multiplication](https://github.com/V-Wong/COMP3821/blob/master/Divide%20and%20Conquer/karatsuba_multiplication.py)
 - [Fast Fourier transform](https://github.com/V-Wong/COMP3821/blob/master/Divide%20and%20Conquer/fast_fourier_transform.py)
 - [Polynomial multiplication](https://github.com/V-Wong/COMP3821/blob/master/Divide%20and%20Conquer/polynomial_multiplication.py)
@@ -23,5 +24,6 @@ Implementation of algorithms from the COMP3821: Extended Algorithms and Programm
 ## Dynamic Programming
 ### Core Algorithms
 - [Fibonacci series](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/fibonacci.py)
+- [Weighted activity selection](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/weighted_activity_selection.py)
 
 If you like this repo, consider checking my [personal website (vwong.dev)](https://vwong.dev) for other cool stuff.
