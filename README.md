@@ -22,6 +22,7 @@ Implementation of algorithms from the COMP3821: Extended Algorithms and Programm
 - [Huffman encoding visualisation](https://vwong.dev/Huffman-Encoding/)
 
 ## Dynamic Programming
+- [Overview on dynamic programming and proof techniques](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/README.md)
 ### Core Algorithms
 - [Fibonacci series](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/fibonacci.py)
 - [Weighted activity selection](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/weighted_activity_selection.py)
