@@ -21,9 +21,8 @@ def minimal_coin_change(denominations: List[int], target: int) -> List[int]:
 
     for i in range(1, target + 1):
         for j in range(0, len(denominations)):
-            cur_min = memo[i - denominations[j]]
-            if cur_min + 1 < memo[i]:
-                memo[i] = cur_min + 1
+            if i - denominations[j] >= 0:
+                memo[i] = min(memo[i - denominations[j]] + 1, memo[i])
 
     return memo[-1]
 
