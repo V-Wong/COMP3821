@@ -22,15 +22,15 @@ Implementation of algorithms from the COMP3821: Extended Algorithms and Programm
 - [Huffman encoding visualisation](https://vwong.dev/Huffman-Encoding/)
 
 ## Dynamic Programming
-- [Overview on dynamic programming and proof techniques](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/README.md)
+- [Notes on dynamic programming and proof techniques](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/README.md)
 ### Core Algorithms
 - [Fibonacci series](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/fibonacci.py)
 - [Weighted activity selection](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/weighted_activity_selection.py)
 
 ## Linear Programming
-- [Overview of linear programming](https://github.com/V-Wong/COMP3821/blob/master/Linear%20Programming/README.md)
+- [Notes on linear programming](https://github.com/V-Wong/COMP3821/blob/master/Linear%20Programming/README.md)
 
 ## Intractability
-- [Overview of intractability](https://github.com/V-Wong/COMP3821/blob/master/Intractability/README.MD)
+- [Notes on intractability](https://github.com/V-Wong/COMP3821/blob/master/Intractability/README.MD)
 
 If you like this repo, consider checking my [personal website (vwong.dev)](https://vwong.dev) for other cool stuff.
