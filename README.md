@@ -26,6 +26,8 @@ Implementation of algorithms from the COMP3821: Extended Algorithms and Programm
 ### Core Algorithms
 - [Fibonacci series](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/fibonacci.py)
 - [Weighted activity selection](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/weighted_activity_selection.py)
+- [Longest increasing subsequence](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/longest_increasing_subsequence.py)
+- [Minimal coin change](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/minimal_coin_change.py)
 
 ## Linear Programming
 - [Notes on linear programming](https://github.com/V-Wong/COMP3821/blob/master/Linear%20Programming/README.md)
