@@ -4,7 +4,7 @@ from typing import List
 def longest_increasing_subsequence(sequence: List[int]) -> List[int]:
     """
     We have a len_memo array that stores the length of the longest
-    increasing subsequence at any given index i.
+    increasing subsequence ending at any given index i.
 
     Base case: length 1 sequence is clearly increasing.
     
@@ -17,7 +17,7 @@ def longest_increasing_subsequence(sequence: List[int]) -> List[int]:
         - We look through len_memo[0..n] to find the largest value
           at index i where sequence[i] < sequence[n + 1].
         - We are essentially trying to extend the longest subsequence
-          obtained in lis(n) with element lis(n + 1) if possible.
+          obtained in lis(n) with element sequence[n + 1] if possible.
         - We then set len_memo to be the increment of len_memo[i].
 
     Optimality argument (cut and paste):
