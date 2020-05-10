@@ -1,5 +1,7 @@
 # Intractability
 
+![Euler diagram for P/NP/NP-Complete/NP-Hard](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/P_np_np-complete_np-hard.svg/2560px-P_np_np-complete_np-hard.svg.png)
+
 ## Decision Problems
 - Problem with a YES or NO answer.
 
@@ -13,11 +15,17 @@
   - There exists a problem B(x, y) such that for every input x, A(x) is true just in case there exists y such that B(x, y) is true.
   - The truth of B(x, y) can be verified by an algorithm running in polynomial time in the length of x only.
 - We call y a certificate for x.
+- Intuitively, **NP** problems can be verified in polynomial time.
 - Such a problem is denoted as A ∈ **NP**.
 
-# NP Complete
+# NP-Complete
 - An **NP** decision problem U(x) is **NP**-complete if every other **NP** problem is polynomially reducible to U(x).
 - **NP**-complete problems are universal: if we had an algorithm that solves one single **NP**-complete problem U, then we could use such an algorithm to solve every other **NP** problem.
 - A solution of an instance x of any other **NP** problem V could be obtained by:
   - Computing polynomial reduction f(x) from V to U.
   - Running algorithm that solves U on instance f(x).
+  
+# NP-Hard
+- An **NP** decision problem A(x) is **NP**-hard if there is an **NP**-complete problem B(x) that is polynomially reducible to A(x).
+- All **NP**-complete problems are reducible to any other **NP**-complete problem in polynomial time. A polynomial time solution to 1 **NP**-hard problem would then indicate a polynomial time solution to all **NP** problems.
+- Intuitively, **NP**-hard problems are problems at least as hard as the **NP**-complete problems.
