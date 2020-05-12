@@ -1,5 +1,5 @@
 # COMP3821: Extended Algorithms and Programming Techniques (UNSW)
-Implementation of algorithms from the COMP3821: Extended Algorithms and Programming Techniques course at UNSW. All the implementations are written in Python 3+ with detailed explanations as comments. This repository is intended for me to study algorithms by implementing them in code and explaining the steps in simple English. Also included are various algorithms not strictly taught in the course but are related to the programming techniques taught.
+Implementation and explanation of algorithms from the COMP3821 course at UNSW. All the implementations are written in Python 3+ with detailed explanations as comments. This repository is intended for me to study algorithms by implementing them in code and explaining the steps in simple English. Also included are various algorithms not strictly taught in the course but are related to the programming techniques taught.
 
 ## Divide and Conquer
 ### Core Algorithms
