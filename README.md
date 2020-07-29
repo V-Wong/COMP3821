@@ -37,5 +37,3 @@ Implementation and explanation of algorithms from the COMP3821 course at UNSW. A
 
 ## Intractability
 - [Notes on intractability (complexity classes and reductions)](https://github.com/V-Wong/COMP3821/blob/master/Intractability/README.MD)
-
-If you like this repo, consider checking my [personal website (vwong.dev)](https://vwong.dev) for other cool stuff.
