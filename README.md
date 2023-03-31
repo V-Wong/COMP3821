@@ -8,8 +8,10 @@ Implementation and explanation of algorithms from the COMP3821 course at UNSW. A
 - [Karatsuba multiplication](https://github.com/V-Wong/COMP3821/blob/master/Divide%20and%20Conquer/karatsuba_multiplication.py)
 - [Fast Fourier transform](https://github.com/V-Wong/COMP3821/blob/master/Divide%20and%20Conquer/fast_fourier_transform.py)
 - [Polynomial multiplication](https://github.com/V-Wong/COMP3821/blob/master/Divide%20and%20Conquer/polynomial_multiplication.py)
+
 ### Other Algorithms
 - [Closest pair of points](https://github.com/V-Wong/COMP3821/blob/master/Divide%20and%20Conquer/closest_pair_of_points.py)
+
 ### Problem Solving
 - [Peak finding (modified binary search)](https://github.com/V-Wong/COMP3821/blob/master/Divide%20and%20Conquer/peak_finder.py)
 - [Median of two sorted arrays (modified binary search)](https://github.com/V-Wong/COMP3821/blob/master/Divide%20and%20Conquer/median_of_two_arrays.py)
@@ -24,11 +26,13 @@ Implementation and explanation of algorithms from the COMP3821 course at UNSW. A
 
 ## Dynamic Programming
 - [Notes on dynamic programming (optimal substructure and proof techniques)](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/README.md)
+
 ### Core Algorithms
 - [Weighted activity selection](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/weighted_activity_selection.py)
 - [Longest increasing subsequence](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/longest_increasing_subsequence.py)
 - [Minimal coin change](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/minimal_coin_change.py)
 - [Matrix chain multiplication](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/matrix_chain_multiplication.py)
+
 ### Other Algorithms
 - [Fibonacci series](https://github.com/V-Wong/COMP3821/blob/master/Dynamic%20Programming/fibonacci.py)
 
